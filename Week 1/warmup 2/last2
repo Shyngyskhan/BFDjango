@@ -1,0 +1,10 @@
+def last2(str):
+  if len(str) < 2:
+    return 0
+  res = 0
+  comp = str[len(str)-2] + str[len(str)-1]
+  for i in range(len(str)-2):
+    temp = str[i] + str[i+1]
+    if temp == comp:
+      res += 1
+  return res

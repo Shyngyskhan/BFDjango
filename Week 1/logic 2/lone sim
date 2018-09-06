@@ -1,0 +1,9 @@
+def lone_sum(a, b, c):
+  res = 0
+  if a != b and a != c:
+    res += a
+  if b != a and b != c:
+    res += b
+  if c != a and c != b:
+    res += c
+  return res

@@ -1,0 +1,6 @@
+def front3(str):
+  s = ""
+  
+  for i in range(3):
+    s += str[:3]
+  return s
